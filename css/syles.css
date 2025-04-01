@@ -2,6 +2,7 @@
     background-color: rgb(232, 223, 209);
     padding: 2%;
     margin: 10px;
+    font-family: Arial, sans-serif;
 }
 
 
@@ -117,4 +118,114 @@ footer li {
 .nom {
     text-decoration: none;
     color: white;
+} 
+
+/* login.html */
+
+#bodylogin {
+    background-color: rgb(232, 223, 209);
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 10px;
+    padding: 0%;
 }
+
+
+.titulologin{
+    text-align: center;
+
+}
+
+main {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+
+.login-box {
+    background: #dfdcdc;
+    width: 350px;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.login-box input[type="email"],
+.login-box input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+
+.login-box label {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 20px;
+}
+
+.checkbox input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+
+button {
+    width: 100%;
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.buttonlogin {
+    background-color: #2980b9;
+}
+
+
+
+.notengocuenta{
+    text-align: center;
+    padding: 3%;
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer li {
+    display: inline;
+    margin: 0 5px;
+}
+
+.nom {
+    text-decoration: none;
+    color: white;
+} 
