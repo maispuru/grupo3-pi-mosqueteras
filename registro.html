@@ -6,31 +6,48 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/syles.css">
 </head>
-<body>
+<body id="bodyregistro">
+    <img src="./img/logo.jpg" alt="">
     <main>
-       <h2>REGISTRATE</h2>
-        <form action="home.html" method="get">
-            <div>
+       <h1 class="tituloregistro">REGISTRATE</h1>
+       <section class="registro">
+        <form action="home.html" method="get" class="registro-box">
+
+             <div>
             <label for="email">Email</label>
             <input type="email" name="email" value="">
             </div>
+
             <div>
             <label for="Password">Contraseña</label>
             <input type="password" name="password" value="">
             </div>
-            <div>
-                <label for="Condiciones">Acepto los terminos y condiciones</label>
-                <input type="radio" name="Condiciones" value="yes">
+
+            <div class="condiciones">
+                <label for="Condiciones">
+                <input type="radio" name="Condiciones" value="yes"> Acepto los terminos y Condiciones
+            </label>
             </div>
-            <div>
+
+            <div class="button-registro">
                 <button type="submit">REGISTRATE</button>
             </div>
-            <div>
+
+            <div class="tengocuenta">
                 <a href=./login.html>Ya tengo una cuenta</a>
             </div>
 
 
         </form>
+    </section>
     </main>
+
+    <footer>
+        <ul>
+            <li><a class="nom" href="">ROSARIO |</a></li>
+            <li><a class="nom" href="">MARIA |</a></li>
+            <li><a class="nom" href="">MILAGROS |</a></li>
+        </ul>
+    </footer>
 </body>
 </html>

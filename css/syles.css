@@ -229,3 +229,107 @@ footer li {
     text-decoration: none;
     color: white;
 } 
+
+/* registro html*/
+#bodyregistro {
+    background-color: rgb(232, 223, 209);
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 10px;
+    padding: 0%;
+}
+
+
+.tituloregistro{
+    text-align: center;
+
+}
+
+main {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+
+.registro-box {
+    background: #dfdcdc;
+    width: 350px;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.registro-box input[type="email"],
+.registro-box input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+
+.registro-box label {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+button {
+    width: 100%;
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.buttonregistro {
+    background-color: #2980b9;
+}
+
+.condiciones{
+    display: block;
+    align-items: left;
+    margin-left: 0;
+    padding: 3%;
+}
+
+.tengocuenta{
+    text-align: center;
+    padding: 3%;
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer li {
+    display: inline;
+    margin: 0 5px;
+}
+
+.nom {
+    text-decoration: none;
+    color: white;
+} 
+
