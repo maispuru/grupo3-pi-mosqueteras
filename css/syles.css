@@ -340,3 +340,34 @@ footer li {
     margin: 10px;
     font-family: Arial, sans-serif;
 }
+
+.detalles-box{
+    display: block;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background-color: #e2c7c7;
+    width: 90%;
+    height: 150px;
+    padding: 9px;
+}
+.Clasificacion-detalles,
+.sinopsis-detalles,
+.genero-detalles {
+    text-align: left;
+}
+.titulo1.detalles{
+    text-align: center;
+    text-decoration: solid;
+}
+
+.imagen1-detalles {
+    display: flex;
+    align-items: flex-start;
+    border-radius: 10px;
+    width: 90%;
+    margin: 200px;
+    height: 100%;
+    background-color: #3498db;
+
+
+}
