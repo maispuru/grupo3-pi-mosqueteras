@@ -484,11 +484,6 @@ footer li {
 } 
 
 
-
-
-
-
-
 /*Detalles html 101 dalmatas*/
 #bodydetalles{
     background-color: rgb(232, 223, 209);
@@ -497,32 +492,51 @@ footer li {
     font-family: Arial, sans-serif;
 }
 
-.detalles-box{
-    display: block;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    background-color: #e2c7c7;
-    width: 90%;
-    height: 150px;
-    padding: 9px;
-}
-.Clasificacion-detalles,
-.sinopsis-detalles,
-.genero-detalles {
-    text-align: left;
-}
-.titulo1.detalles{
-    text-align: center;
-    text-decoration: solid;
-}
-
-.imagen1-detalles {
+.detalles-101dalmatas {
     display: flex;
-    align-items: flex-start;
-    border-radius: 10px;
-    width: 90%;
-    margin: 200px;
-    height: 100%;
-    background-color: #3498db;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #e7ded0;
+    font-family: sans-serif;
+  }
+  
+  .detalle-contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
 
-}
+  .imagen1-detalles img {
+width: 250px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  }
+  
+  .detalles-box {
+    background-color: #f0cfd6;
+    padding: 15px 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    text-align: left;
+  }
+  
+  .titulo1-detalles {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .Clasificacion-detalles,
+  .genero-detalles,
+  .Sinopsis-detalles {
+    margin-bottom: 10px;
+  }
+  
+  .genero-detalles a {
+    color: blue;
+    text-decoration: underline;
+  }
