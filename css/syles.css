@@ -2,7 +2,7 @@
 /* css home*/
 
 #bodyhome{
-    background-color: rgb(232, 223, 209);
+    background-color:#bbb7b700;
     padding: 2%;
     margin: 10px;
     font-family: Arial, sans-serif;
@@ -16,6 +16,7 @@ header {
     color: white;
     padding: 15px 20px;
     flex-wrap: wrap;
+    
 }
 
 
@@ -50,6 +51,7 @@ header {
 .search-form {
     display: flex;
     align-items: center;
+
 }
 
 .search-form input {
@@ -129,13 +131,13 @@ footer li {
 
 .nom {
     text-decoration: none;
-    color: white;
+    color: rgb(189, 186, 186);
 } 
 
 /* login.html */
 
 #bodylogin {
-    background-color: rgb(232, 223, 209);
+    background-color:#dfdcdc;
     font-family: Arial, sans-serif;
     background-size: cover;
     background-repeat: no-repeat;
@@ -250,7 +252,7 @@ footer li {
 /* registro html*/
 
 #bodyregistro {
-    background-color: rgb(232, 223, 209);
+    background-color:#bbb7b700;
     font-family: Arial, sans-serif;
     background-size: cover;
     background-repeat: no-repeat;
@@ -354,7 +356,7 @@ footer li {
 /* Genero html */
 
 #bodygeneros{
-    background-color: rgb(232, 223, 209);
+    background-color:#bbb7b700;
     padding: 2%;
     margin: 10px;
     font-family: Arial, sans-serif;
@@ -486,7 +488,7 @@ footer li {
 
 /*Detalles html 101 dalmatas*/
 #bodydetalles{
-    background-color: rgb(232, 223, 209);
+    background-color:#bbb7b700;
     padding: 2%;
     margin: 10px;
     font-family: Arial, sans-serif;
@@ -496,47 +498,45 @@ footer li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 40px 20px;
-    background-color: #e7ded0;
+    padding: 45px 25px;
+    background-color:rgba(199, 195, 195, 0.2) ;
     font-family: sans-serif;
   }
   
-  .detalle-contenido {
+.detalle-contenido {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 20px;
   }
   
-
-  .imagen1-detalles img {
-width: 250px;
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover;
-  }
-  
-  .detalles-box {
-    background-color: #f0cfd6;
+.detalles-box {
     padding: 15px 20px;
     border-radius: 8px;
-    max-width: 500px;
+    width: 100%;
     text-align: left;
   }
   
   .titulo1-detalles {
     text-align: center;
-    font-size: 2rem;
-    margin-bottom: 30px;
+    
   }
   
   .Clasificacion-detalles,
   .genero-detalles,
-  .Sinopsis-detalles {
-    margin-bottom: 10px;
+  .Sinopsis-detalles,
+  .estreno-detalles {
+    margin-bottom: 2px;
+    font-size: 18px;
   }
-  
-  .genero-detalles a {
-    color: blue;
-    text-decoration: underline;
+  .video-detalle {
+    display: flex;
+    flex-wrap: wrap;
+
+  } 
+
+  .titulo2-detalles{
+    font-style: italic;
+    font-size: 25px;
+    font-weight: bold;
+
   }
