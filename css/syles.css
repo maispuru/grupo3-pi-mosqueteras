@@ -145,14 +145,17 @@ footer li {
     padding: 0%;
 }
 
-
-.titulologin{
+.titulologin {
     text-align: center;
-
 }
 
 .logologin{
-        height: 50px;
+
+    display: block;
+    margin: 20px auto;
+    width: 100px; 
+     height: auto;
+     max-width: 100%;
 
 }
 
@@ -263,6 +266,16 @@ footer li {
 
 .tituloregistro{
     text-align: center;
+
+}
+
+.logoregistrate{
+
+    display: block;
+    margin: 20px auto;
+    width: 100px; 
+     height: auto;
+     max-width: 100%;
 
 }
 
@@ -540,3 +553,795 @@ footer li {
     font-weight: bold;
 
   }
+
+  /* peliculas html */
+
+#bodypeliculas{
+    background-color: rgb(232, 223, 209);
+    padding: 2%;
+    margin: 10px;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    color: white;
+    padding: 15px 20px;
+    flex-wrap: wrap;
+}
+
+
+
+.section1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-form input {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+.search-form button {
+    background: #444;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+.peliculas {
+    margin: 20px;
+}
+
+.titulospeliculas {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    background: #222;
+    color: white;
+    padding: 15px 20px;
+    flex-wrap: wrap;
+}
+
+.divpeliculas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.artpeliculas {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.artpeliculas img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.artpeliculas h3, .artpeliculas p {
+    margin: 10px 0;
+    color: black;
+    text-align: center;
+}
+
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer li {
+    display: inline;
+    margin: 0 5px;
+}
+
+.nom {
+    text-decoration: none;
+    color: white;
+} 
+
+/* series html */
+
+#bodyseries{
+    background-color: rgb(232, 223, 209);
+    padding: 2%;
+    margin: 10px;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    color: white;
+    padding: 15px 20px;
+    flex-wrap: wrap;
+}
+
+
+
+.section1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-form input {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+.search-form button {
+    background: #444;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+.series {
+    margin: 20px;
+}
+
+.titulosseries {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    background: #222;
+    color: white;
+    padding: 15px 20px;
+    flex-wrap: wrap;
+}
+
+.divseries{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.artseries {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.artseries img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.artseries h3, .artseries p {
+    margin: 10px 0;
+    color: black;
+    text-align: center;
+}
+
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer li {
+    display: inline;
+    margin: 0 5px;
+}
+
+.nom {
+    text-decoration: none;
+    color: white;
+} 
+
+
+/* drama html */
+
+#bodydrama{
+    background-color: rgb(232, 223, 209);
+    padding: 2%;
+    margin: 10px;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    color: white;
+    padding: 15px 20px;
+    flex-wrap: wrap;
+}
+
+
+.section1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-form input {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+.search-form button {
+    background: #444;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.drama {
+    margin: 20px;
+}
+
+.titulosdrama {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    background: #222;
+    color: white;
+    padding: 15px 20px;
+    flex-wrap: wrap;
+}
+
+.divdrama {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.artdrama {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.artdrama img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.artdrama h3, .artdrama p {
+    margin: 10px 0;
+    color: black;
+    text-align: center;
+}
+
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer li {
+    display: inline;
+    margin: 0 5px;
+}
+
+
+/* infantil html */
+
+#bodyinfantil{
+    background-color: rgb(232, 223, 209);
+    padding: 2%;
+    margin: 10px;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    color: white;
+    padding: 15px 20px;
+    flex-wrap: wrap;
+}
+
+
+.section1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-form input {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+.search-form button {
+    background: #444;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.infantil {
+    margin: 20px;
+}
+
+.titulosinfantil {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    background: #222;
+    color: white;
+    padding: 15px 20px;
+    flex-wrap: wrap;
+}
+
+.divinfantil {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.artinfantil {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.artinfantil img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.artinfantil h3, .artinfantil p {
+    margin: 10px 0;
+    color: black;
+    text-align: center;
+}
+
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer li {
+    display: inline;
+    margin: 0 5px;
+}
+
+.nom {
+    text-decoration: none;
+    color: white;
+} 
+
+/* cienciaficcion html */
+
+#bodycienciaficcion{
+    background-color: rgb(232, 223, 209);
+    padding: 2%;
+    margin: 10px;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    color: white;
+    padding: 15px 20px;
+    flex-wrap: wrap;
+}
+
+
+.section1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-form input {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+.search-form button {
+    background: #444;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.cienciaficcion {
+    margin: 20px;
+}
+
+.tituloscienciaficcion {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    background: #222;
+    color: white;
+    padding: 15px 20px;
+    flex-wrap: wrap;
+}
+
+.divcienciaficcion {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.artcienciaficcion {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.artcienciaficcion img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.artcienciaficcion h3, .artcienciaficcion p {
+    margin: 10px 0;
+    color: black;
+    text-align: center;
+}
+
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer li {
+    display: inline;
+    margin: 0 5px;
+}
+
+.nom {
+    text-decoration: none;
+    color: white;
+} 
+
+/* accion html */
+
+#bodyaccion{
+    background-color: rgb(232, 223, 209);
+    padding: 2%;
+    margin: 10px;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    color: white;
+    padding: 15px 20px;
+    flex-wrap: wrap;
+}
+
+
+.section1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-form input {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+.search-form button {
+    background: #444;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.accion {
+    margin: 20px;
+}
+
+.titulosaccion {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    background: #222;
+    color: white;
+    padding: 15px 20px;
+    flex-wrap: wrap;
+}
+
+.divaccion {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.artaccion {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.artaccion img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.artaccion h3, .artaccion p {
+    margin: 10px 0;
+    color: black;
+    text-align: center;
+}
+
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer li {
+    display: inline;
+    margin: 0 5px;
+}
+
+.nom {
+    text-decoration: none;
+    color: white;
+} 
+
