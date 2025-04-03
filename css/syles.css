@@ -499,7 +499,7 @@ footer li {
 } 
 
 
-/*Detalles html 101 dalmatas*/
+/*Detalles html*/
 #bodydetalles{
     background-color:#bbb7b700;
     padding: 2%;
@@ -557,7 +557,7 @@ footer li {
   /* peliculas html */
 
 #bodypeliculas{
-    background-color: rgb(232, 223, 209);
+    background-color:#bbb7b700;
     padding: 2%;
     margin: 10px;
     font-family: Arial, sans-serif;
@@ -690,7 +690,7 @@ footer li {
 /* series html */
 
 #bodyseries{
-    background-color: rgb(232, 223, 209);
+    background-color:#bbb7b700;
     padding: 2%;
     margin: 10px;
     font-family: Arial, sans-serif;
@@ -824,7 +824,7 @@ footer li {
 /* drama html */
 
 #bodydrama{
-    background-color: rgb(232, 223, 209);
+    background-color:#bbb7b700;
     padding: 2%;
     margin: 10px;
     font-family: Arial, sans-serif;
@@ -952,7 +952,7 @@ footer li {
 /* infantil html */
 
 #bodyinfantil{
-    background-color: rgb(232, 223, 209);
+    background-color:#bbb7b700;
     padding: 2%;
     margin: 10px;
     font-family: Arial, sans-serif;
@@ -1084,7 +1084,7 @@ footer li {
 /* cienciaficcion html */
 
 #bodycienciaficcion{
-    background-color: rgb(232, 223, 209);
+    background-color:#bbb7b700;
     padding: 2%;
     margin: 10px;
     font-family: Arial, sans-serif;
@@ -1216,7 +1216,7 @@ footer li {
 /* accion html */
 
 #bodyaccion{
-    background-color: rgb(232, 223, 209);
+    background-color:#bbb7b700;
     padding: 2%;
     margin: 10px;
     font-family: Arial, sans-serif;
