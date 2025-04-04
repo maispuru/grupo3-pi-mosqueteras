@@ -83,10 +83,8 @@ header {
     flex-wrap: wrap;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+.detallepeliculas{
+    display: flex;
     margin-top: 20px;
 }
 
