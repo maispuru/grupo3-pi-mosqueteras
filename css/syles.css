@@ -83,10 +83,8 @@ header {
     flex-wrap: wrap;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+.detallepeliculas{
+    display: flex;
     margin-top: 20px;
 }
 
@@ -1356,7 +1354,7 @@ footer li {
     background-color:#bbb7b700;
     padding: 2%;
     margin: 10px;
-    font-family: Arial, sans-serif;
+    border: 5px double rgb(187, 183, 183);
 
 }
 
@@ -1382,3 +1380,11 @@ footer li {
 .resultados p {
     color: #888;
 }
+
+#bodyresultado{
+    background-color:#bbb7b700;
+    padding: 2%;
+    margin: 10px;
+    font-family: Arial, sans-serif;
+}
+
