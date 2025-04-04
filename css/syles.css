@@ -24,7 +24,6 @@ header {
 .section1 {
     display: flex;
     align-items: center;
-    gap: 20px;
 }
 
 .logo img {
@@ -86,6 +85,12 @@ header {
 .detallepeliculas{
     display: flex;
     margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.estructura{
+    padding: 30px;
 }
 
 .item {
@@ -139,7 +144,7 @@ footer li {
     font-family: Arial, sans-serif;
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 10px;
+    margin: 0%;
     padding: 0%;
 }
 
@@ -152,8 +157,8 @@ footer li {
     display: block;
     margin: 20px auto;
     width: 100px; 
-     height: auto;
-     max-width: 100%;
+    height: auto;
+    max-width: 100%;
 
 }
 
@@ -257,7 +262,7 @@ footer li {
     font-family: Arial, sans-serif;
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 10px;
+    margin: 0%;
     padding: 0%;
 }
 
@@ -1240,7 +1245,6 @@ header {
 .section1 {
     display: flex;
     align-items: center;
-    gap: 20px;
 }
 
 .logo img {
@@ -1350,6 +1354,13 @@ footer li {
 } 
 
 /* resultados html */
+header {
+    display: flex;
+    align-items: center;
+    background: #222;
+    color: white;
+    
+}
 .resultados {
     background-color:#bbb7b700;
     padding: 2%;
@@ -1383,8 +1394,8 @@ footer li {
 
 #bodyresultado{
     background-color:#bbb7b700;
-    padding: 2%;
-    margin: 10px;
     font-family: Arial, sans-serif;
+    padding: 0%;
+    margin: 0%;
 }
 
