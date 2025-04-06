@@ -435,8 +435,8 @@ footer li {
 
 #bodygeneropeliculas{
     background-color:#bbb7b700;
-    padding: 0;
-    margin: 0;
+    padding: 0%;
+    margin: 0%;
     font-family: Arial, sans-serif;
 }
 
@@ -514,22 +514,38 @@ header {
 }
 
 .divgeneropelicula {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 20px;
+    justify-content: center;
 }
 
 .artgeneropelicula {
     background: white;
     padding: 10px;
+    margin: 0px;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     text-align: center;
+    margin-left: 85px;
+    margin-top: 2%;
 }
 
 .artgeneropelicula img {
     width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 2px;
+}
+
+.anillos{
+    width: 15%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.harry{
+    width: 15%;
     height: auto;
     border-radius: 5px;
 }
