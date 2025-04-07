@@ -1,11 +1,15 @@
 
 /* css home*/
 
-#bodyhome{
+body{
     background-color:#bbb7b700;
     padding: 0;
     margin: 0;
     font-family: Arial, sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -156,18 +160,6 @@ footer li {
 
 /* login.html */
 
-#bodylogin {
-    background-color:#bbb7b700;
-    font-family: Arial, sans-serif;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
 .titulologin {
     text-align: center;
 }
@@ -277,19 +269,6 @@ footer li {
 
 /* registro html*/
 
-#bodyregistro {
-    background-color:#bbb7b700;
-    font-family: Arial, sans-serif;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-
 .tituloregistro{
     text-align: center;
 
@@ -394,12 +373,6 @@ footer li {
 
 
 /*Detalles html*/
-#bodydetalles{
-    background-color:#bbb7b700;
-    padding: 0;
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
 
 header {
     display: flex;
@@ -465,13 +438,6 @@ header {
   
 
   /* generospeliculas html */
-
-#bodygeneropeliculas{
-    background-color:#bbb7b700;
-    padding: 0%;
-    margin: 0%;
-    font-family: Arial, sans-serif;
-}
 
 header {
     display: flex;
@@ -616,13 +582,6 @@ footer li {
 
 /* generosseries html */
 
-#bodygenerosseries{
-    background-color:#bbb7b700;
-    padding: 0;
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
 header {
     display: flex;
     justify-content: space-between;
@@ -756,13 +715,6 @@ footer li {
 
 /* resultados html */
 
-#bodyresultado{
-    background-color:#bbb7b700;
-    font-family: Arial, sans-serif;
-    padding: 0%;
-    margin: 0%;
-}
-
 header {
     display: flex;
     align-items: center;
@@ -802,13 +754,6 @@ header {
 }
 
 /* detallegenero  html */
-
-#bodydetallegenero{
-    background-color:#bbb7b700;
-    padding: 0;
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
 
 header {
     display: flex;
