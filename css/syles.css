@@ -16,17 +16,18 @@ header {
     color: white;
     padding: 15px 20px;
     flex-wrap: wrap;
-    
 }
 
 
 .section1 {
     display: flex;
     align-items: center;
+    flex-wrap: nowrap;
 }
 
 .logo img {
     height: 50px;
+    margin-right: 10px;
 }
 
 
@@ -35,6 +36,8 @@ header {
     padding: 0;
     margin: 0;
     display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
 }
 
 .menu li {
@@ -49,6 +52,7 @@ header {
 .search-form {
     display: flex;
     align-items: center;
+    margin-left: 49%;
 
 }
 
@@ -56,6 +60,7 @@ header {
     padding: 5px;
     border: none;
     border-radius: 3px;
+    margin-right: 5px;
 }
 
 .search-form button {
@@ -64,6 +69,7 @@ header {
     border: none;
     padding: 5px 10px;
     cursor: pointer;
+    border-radius: 3px;
 }
 
 
@@ -294,8 +300,8 @@ footer li {
     display: block;
     margin: 20px auto;
     width: 100px; 
-     height: auto;
-     max-width: 100%;
+    height: auto;
+    max-width: 100%;
 
 }
 
@@ -390,9 +396,19 @@ footer li {
 /*Detalles html*/
 #bodydetalles{
     background-color:#bbb7b700;
-    padding: 2%;
-    margin: 10px;
+    padding: 0;
+    margin: 0;
     font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    color: white;
+    padding: 10px 10px;
+    flex-wrap: wrap;
 }
 
 .detalles-101dalmatas {
@@ -407,45 +423,45 @@ footer li {
 .detalle-contenido {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-  }
+}
   
 .detalles-box {
     padding: 15px 20px;
     border-radius: 8px;
     width: 100%;
     text-align: left;
-  }
+}
   
-  .titulo1-detalles {
+.titulo1-detalles {
     text-align: center;
     
-  }
+}
   
-  .Clasificacion-detalles,
+.Clasificacion-detalles,
   .genero-detalles,
   .Sinopsis-detalles,
   .estreno-detalles {
     margin-bottom: 2px;
     font-size: 18px;
-  }
-  .video-detalle {
+}
+
+.video-detalle {
     display: flex;
     flex-wrap: wrap;
 
-  } 
+} 
 
-  .titulo2-detalles{
+.titulo2-detalles{
     font-style: italic;
     font-size: 25px;
     font-weight: bold;
 
-  }
+}
 
-  .link-detalles {
+.link-detalles {
     color: inherit;
     text-decoration: none;
-  }
+}
   
 
   /* generospeliculas html */
@@ -468,11 +484,12 @@ header {
 }
 
 
-
 .section1 {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    gap: 20px;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
 }
 
 .logo img {
@@ -621,7 +638,9 @@ header {
 .section1 {
     display: flex;
     align-items: center;
-    gap: 20px;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: row;
 }
 
 .logo img {
@@ -799,10 +818,7 @@ header {
     color: white;
     padding: 15px 20px;
     flex-wrap: wrap;
-    
 }
-
-
 
 .section1 {
     display: flex;
