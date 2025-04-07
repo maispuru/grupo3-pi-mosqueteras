@@ -113,6 +113,17 @@ header {
     text-align: center;
 }
 
+.anillos{
+    width: 12%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.harry{
+    width: 14%;
+    height: auto;
+    border-radius: 5px;
+}
 
 footer {
     background: #222;
@@ -144,8 +155,11 @@ footer li {
     font-family: Arial, sans-serif;
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .titulologin {
@@ -262,8 +276,11 @@ footer li {
     font-family: Arial, sans-serif;
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -285,7 +302,8 @@ footer li {
 main {
     text-align: center;
     margin-top: 30px;
-  }
+    flex: 1;
+}
 
 
 .registro-box {
@@ -351,7 +369,6 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-    margin-top: 20px;
 }
 
 footer ul {
@@ -719,6 +736,14 @@ footer li {
 
 
 /* resultados html */
+
+#bodyresultado{
+    background-color:#bbb7b700;
+    font-family: Arial, sans-serif;
+    padding: 0%;
+    margin: 0%;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -755,13 +780,6 @@ header {
 
 .resultados p {
     color: #888;
-}
-
-#bodyresultado{
-    background-color:#bbb7b700;
-    font-family: Arial, sans-serif;
-    padding: 0%;
-    margin: 0%;
 }
 
 /* detallegenero  html */
