@@ -857,6 +857,12 @@ footer li {
         width: 100%;
         justify-content: center;
     }
+
+    .search-form button{
+        width: auto;
+        flex: 0 0 auto;
+        white-space: nowrap;
+    }
     
     .tituloscategoria {
         flex-direction: column;
@@ -872,7 +878,7 @@ footer li {
     
     .anillos,
     .harry {
-        width: 38%;
+        width: 29%;
     }
     
     .estructura {
