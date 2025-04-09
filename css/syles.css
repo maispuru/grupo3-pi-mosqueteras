@@ -513,49 +513,6 @@ header {
     flex-wrap: wrap;
 }
 
-.divgeneropelicula {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    justify-content: center;
-}
-
-.artgeneropelicula {
-    background: white;
-    padding: 10px;
-    margin: 0px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    margin-left: 85px;
-    margin-top: 2%;
-}
-
-.artgeneropelicula img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-top: 2px;
-}
-
-.anillos{
-    width: 15%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.harry{
-    width: 15%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.artgeneropelicula h3, .artgeneropelicula p {
-    margin: 10px 0;
-    color: black;
-    text-align: center;
-}
-
 
 footer {
     background: #222;
@@ -657,37 +614,6 @@ header {
     flex-wrap: wrap;
 }
 
-.divgeneroserie {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.artgeneroserie {
-    background: white;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    margin-left: 85px;
-    margin-top: 2%;
-}
-
-.artgeneroserie img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-top: 1%;
-    margin-bottom: 1%;
-}
-
-.artgeneroserie h3, .artgeneroserie p {
-    margin: 10px 0;
-    color: black;
-    text-align: center;
-}
-
 
 footer {
     background: #222;
@@ -753,6 +679,29 @@ header {
     color: #888;
 }
 
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer li {
+    display: inline;
+    margin: 0 5px;
+}
+
+.nom {
+    text-decoration: none;
+    color: rgb(189, 186, 186);
+} 
+
 /* detallegenero  html */
 
 header {
@@ -810,38 +759,36 @@ header {
     padding: 5px 10px;
     cursor: pointer;
 } 
+
 .detallegenero {
     margin: 20px;
 }
 
-.titulosdetallegenero {
+.titulosdetalle {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: right;
     background: #222;
     color: white;
     padding: 15px 20px;
+    flex-wrap: wrap;
 }
 
 
 .divdetallegenero {
     display: flex;
-    flex-wrap: wrap;
     margin-top: 20px;
-    
+    justify-content: space-between;
+    align-items: center;
 }
 
-.detallegenero {
-    padding: 30px;
-}
 
 .artdetallegenero {
     background: white;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    text-align: right;
 }
 
 .artdetallegenero img {
@@ -888,6 +835,5 @@ footer li {
 @media (max-width::420px) {
     ... // mobile
 }
-
 
 
