@@ -236,35 +236,10 @@ button {
     background-color: #2980b9;
 }
 
-
-
 .notengocuenta{
     text-align: center;
     padding: 3%;
 }
-
-footer {
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
-}
-
-footer ul {
-    list-style: none;
-    padding: 0;
-}
-
-footer li {
-    display: inline;
-    margin: 0 5px;
-}
-
-.nom {
-    text-decoration: none;
-    color: white;
-} 
 
 /* registro html*/
 
@@ -348,42 +323,9 @@ button {
     padding: 3%;
 }
 
-footer {
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
-
-footer ul {
-    list-style: none;
-    padding: 0;
-}
-
-footer li {
-    display: inline;
-    margin: 0 5px;
-}
-
-.nom {
-    text-decoration: none;
-    color: white;
-} 
-
-
 /*Detalles html*/
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #222;
-    color: white;
-    padding: 10px 10px;
-    flex-wrap: wrap;
-}
-
-.detalles-101dalmatas {
+.detalles-peliculas {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -438,68 +380,6 @@ header {
 
   /* generospeliculas html */
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #222;
-    color: white;
-    padding: 15px 20px;
-    flex-wrap: wrap;
-}
-
-
-.section1 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-}
-
-.logo img {
-    height: 50px;
-}
-
-
-.menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-.menu li {
-    margin: 0 10px;
-}
-
-.menu a {
-    text-decoration: none;
-    color: white;
-}
-
-.search-form {
-    display: flex;
-    align-items: center;
-    margin-left: 49%;
-    margin-right: 25px;
-}
-
-.search-form input {
-    padding: 5px;
-    border: none;
-    border-radius: 3px;
-    margin-right: 25px;
-}
-
-.search-form button {
-    background: #444;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-
 .maingenero {
     display: flex;
     flex-wrap: wrap;
@@ -528,92 +408,7 @@ header {
     flex-wrap: wrap;
 }
 
-
-footer {
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
-}
-
-footer ul {
-    list-style: none;
-    padding: 0;
-}
-
-footer li {
-    display: inline;
-    margin: 0 5px;
-}
-
-.nom {
-    text-decoration: none;
-    color: rgb(189, 186, 186);
-} 
-
 /* generosseries html */
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #222;
-    color: white;
-    padding: 15px 20px;
-    flex-wrap: wrap;
-}
-
-
-
-.section1 {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    flex-direction: row;
-}
-
-.logo img {
-    height: 50px;
-}
-
-
-.menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-.menu li {
-    margin: 0 10px;
-}
-
-.menu a {
-    text-decoration: none;
-    color: white;
-}
-
-.search-form {
-    display: flex;
-    align-items: center;
-    
-}
-
-.search-form input {
-    padding: 5px;
-    border: none;
-    border-radius: 3px;
-}
-
-.search-form button {
-    background: #444;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-}
 
 .maingenero {
     display: flex;
@@ -642,40 +437,8 @@ header {
     flex-wrap: wrap;
 }
 
-
-footer {
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
-}
-
-footer ul {
-    list-style: none;
-    padding: 0;
-}
-
-footer li {
-    display: inline;
-    margin: 0 5px;
-}
-
-.nom {
-    text-decoration: none;
-    color: rgb(189, 186, 186);
-} 
-
-
 /* resultados html */
 
-header {
-    display: flex;
-    align-items: center;
-    background: #222;
-    color: white;
-    
-}
 .resultados {
     background-color:#bbb7b700;
     padding: 2%;
@@ -711,86 +474,8 @@ header {
 
 }
 
-footer {
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
-}
-
-footer ul {
-    list-style: none;
-    padding: 0;
-}
-
-footer li {
-    display: inline;
-    margin: 0 5px;
-}
-
-.nom {
-    text-decoration: none;
-    color: rgb(189, 186, 186);
-} 
 
 /* detallegenero  html */
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #222;
-    color: white;
-    padding: 15px 20px;
-    flex-wrap: wrap;
-}
-
-.section1 {
-    display: flex;
-    align-items: center;
-}
-
-.logo img {
-    height: 50px;
-}
-
-
-.menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-.menu li {
-    margin: 0 10px;
-}
-
-.menu a {
-    text-decoration: none;
-    color: white;
-}
-
-.search-form {
-    display: flex;
-    align-items: center;
-
-}
-
-.search-form input {
-    padding: 5px;
-    border: none;
-    border-radius: 3px;
-}
-
-.search-form button {
-    background: #444;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-} 
 
 .detallegenero {
     margin: 20px;
@@ -848,30 +533,6 @@ header {
     color: black;
     text-align: center;
 }
-
-
-footer {
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
-}
-
-footer ul {
-    list-style: none;
-    padding: 0;
-}
-
-footer li {
-    display: inline;
-    margin: 0 5px;
-}
-
-.nom {
-    text-decoration: none;
-    color: rgb(189, 186, 186);
-} 
 
 @media (max-width:768px)  {
     /* tablets */
