@@ -893,8 +893,84 @@ footer li {
     
 }
 
-@media (max-width::420px) {
+@media (max-width:420px) {
     /* mobile */
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .section1 {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .menu li {
+        margin: 6px 0; 
+    }
+
+    .search-form {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .search-form input {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .search-form button {
+        flex: 0 0 auto;
+        white-space: nowrap;
+    }
+
+    .tituloscategoria {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .detallepeliculas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .detallepeliculas {
+        margin-bottom: 20px; 
+    }
+
+    .estructura {
+        padding: 15px;
+    }
+
+    .anillos,
+    .harry {
+        width: 52%;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    footer li {
+        display: block;
+        margin: 5px 0;
+    }
 }
 
 
