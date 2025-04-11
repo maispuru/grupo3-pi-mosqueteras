@@ -338,7 +338,7 @@ button {
     display: flex;
     flex-direction: column;
 }
-  
+
 .detalles-box {
     padding: 15px 20px;
     border-radius: 8px;
@@ -593,20 +593,21 @@ button {
         align-items: center;
         text-align: center;
     }
+    
 
     .detalles-peliculas {
-        width: 80%
+        width: 90%
+
     }
 
     .detalle-contenido {
-        width: 60%
+        width: 90%
     }
 
     .video-detalle {
-        width: 300%;
+        width: 100%;
     }	
     
-
     .estructura {
         padding: 15px;
     }
