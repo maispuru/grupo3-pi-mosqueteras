@@ -123,7 +123,7 @@ header {
 }
 
 .anillos{
-    width: 12%;
+    width: 14%;
     height: auto;
     border-radius: 5px;
 }
@@ -406,6 +406,7 @@ button {
     color: white;
     padding: 15px 20px;
     flex-wrap: wrap;
+    text-decoration: none;
 }
 
 /* generosseries html */
@@ -435,6 +436,10 @@ button {
     color: white;
     padding: 15px 20px;
     flex-wrap: wrap;
+}
+
+.link{
+    text-decoration: none;
 }
 
 /* resultados html */
@@ -547,6 +552,11 @@ button {
         align-items: center;
         width: 100%;
     }
+
+    .item{
+        margin-top: 18px;
+
+    }
     
     .menu ul {
         flex-direction: column;
@@ -624,6 +634,10 @@ button {
         margin: 6px 0; 
     }
 
+    .item{
+        margin-top: 18px;
+    }
+
     .search-form {
         flex-direction: column;
         align-items: center;
@@ -631,7 +645,7 @@ button {
     }
 
     .search-form input {
-        width: 90%;
+        width: 42%;
         margin-bottom: 10px;
     }
 
