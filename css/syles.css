@@ -539,83 +539,18 @@ button {
     text-align: center;
 }
 
-@media (max-width:768px)  {
-    /* tablets */
-    header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    
-    .section1 {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .item{
-        margin-top: 18px;
-
-    }
-    
-    .menu ul {
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-    }
-    
-    .menu li {
-        margin: 5px 0;
-    }
-    
-    .search-form {
-        margin-left: 0;
-        margin-top: 10px;
-        width: 100%;
-        justify-content: center;
-    }
-
-    .search-form button{
-        width: auto;
-        flex: 0 0 auto;
-        white-space: nowrap;
-    }
-    
-    .tituloscategoria {
-        flex-direction: column;
-        align-items: flex-start;
-        text-align: left;
-    }
-    
-    .detallepeliculas {
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 20px;
-    }
-    
-    .anillos,
-    .harry {
-        width: 29%;
-    }
-    
-    .estructura {
-        padding: 15px;
-    }
-    
-    footer li {
-        display: block;
-        margin: 5px 0;
-    }
-       
-    
-}
-
 @media (max-width:420px) {
     /* mobile */
+
+    body {
+        width: 100%;
+    }
+   
     header {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        width: 100%;
     }
 
     .section1 {
@@ -639,19 +574,18 @@ button {
     }
 
     .search-form {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        width: 100%;
+        
     }
 
     .search-form input {
-        width: 42%;
-        margin-bottom: 10px;
+        margin-bottom: 0px;
+        margin: 2px;
     }
 
     .search-form button {
-        flex: 0 0 auto;
-        white-space: nowrap;
+        margin: 2px;
     }
 
     .tituloscategoria {
@@ -660,14 +594,18 @@ button {
         text-align: center;
     }
 
-    .detallepeliculas {
-        flex-direction: column;
-        align-items: center;
+    .detalles-peliculas {
+        width: 80%
     }
 
-    .detallepeliculas {
-        margin-bottom: 20px; 
+    .detalle-contenido {
+        width: 60%
     }
+
+    .video-detalle {
+        width: 300%;
+    }	
+    
 
     .estructura {
         padding: 15px;
@@ -680,6 +618,7 @@ button {
 
     footer {
         text-align: center;
+        width: 100%;
     }
 
     footer ul {
