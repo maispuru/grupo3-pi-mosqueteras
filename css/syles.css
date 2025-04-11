@@ -57,6 +57,7 @@ header {
     display: flex;
     align-items: center;
     margin-left: 49%;
+    margin-right: 25px;
 
 }
 
@@ -64,7 +65,7 @@ header {
     padding: 5px;
     border: none;
     border-radius: 3px;
-    margin-right: 5px;
+    margin-right: 25px;
 }
 
 .search-form button {
