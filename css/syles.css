@@ -91,7 +91,7 @@ header {
 }
 
 
-.detallepeliculas{
+.peliculas-home{
     display: flex;
     margin-top: 20px;
     justify-content: space-between;
@@ -587,17 +587,30 @@ button {
     .search-form button {
         margin: 2px;
     }
+    
+    .peliculas-home {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .anillos ,
+    .harry, 
+    .item {
+        width: 52%;
+     }
 
     .tituloscategoria {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
-    
 
+    .estructura {
+        padding: 15px;
+    }
+     
     .detalles-peliculas {
         width: 90%
-
     }
 
     .detalle-contenido {
@@ -607,15 +620,14 @@ button {
     .video-detalle {
         width: 100%;
     }	
-    
-    .estructura {
-        padding: 15px;
-    }
 
-    .anillos,
-    .harry {
-        width: 52%;
+    .divdetallegenero{
+        flex-direction: column;
     }
+    .subtitulosdetalle {
+      width: 40%;
+    }
+    
 
     footer {
         text-align: center;
