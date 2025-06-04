@@ -9,29 +9,27 @@ window.addEventListener("load", function () {
             return respuesta.json();
         })
         .then(function (data) {
-            let contenedor = document.querySelector(".maingenero");
-            let genres = data.genres;
+            const contenedor = document.querySelector(".maingenero");
+            let genresHTML = '';
 
-            genres.forEach(function (genre) {
-                let section = document.createElement("section");
-                section.classList.add("generopelicula");
-
-                let link = document.createElement("a");
-                link.classList.add("link");
-                link.href = `./detallegenero.html?genre_id=${genre.id}&genre_name=${encodeURIComponent(genre.name)}`;
-
-                let h2 = document.createElement("h2");
-                h2.classList.add("titulosgeneropelicula");
-                h2.innerText = genre.name;
-
-                link.appendChild(h2);
-                section.appendChild(link);
-                contenedor.appendChild(section);
+            data.genres.forEach(function (genre) {
+                genresHTML += `
+                    <section class="generopelicula">
+                        <a class="link" href="./detallegenero.html?genre_id=${genre.id}&genre_name=${encodeURIComponent(genre.name)}">
+                            <h2 class="titulosgeneropelicula">${genre.name}</h2>
+                        </a>
+                    </section>
+                `;
             });
+
+            contenedor.innerHTML = genresHTML;
         })
         .catch(function (error) {
             console.log("Error al cargar géneros:", error);
-            let contenedor = document.querySelector(".maingenero");
+            const contenedor = document.querySelector(".maingenero");
             contenedor.innerHTML = '<p>Error cargando géneros. Intenta más tarde.</p>';
         });
 });
+
+
+
