@@ -1,62 +1,79 @@
 window.addEventListener("load", function () {
- 
-  let tituloPrincipal = document.querySelector(".mainTitle");
-  tituloPrincipal.style.fontSize = "24px";
-  tituloPrincipal.innerText += " desde TMDb";
-
-  
   const API_KEY = "9731aaf98dbc7db52a32fb77a340e7c4"; 
   const BASE_URL = "https://api.themoviedb.org/3";
   const IMG_URL = "https://image.tmdb.org/t/p/w200";
 
-  const secciones = {
-    "peliculas-populares": `${BASE_URL}/movie/popular?api_key=${API_KEY}&language=es`,
-    "series-populares": `${BASE_URL}/tv/popular?api_key=${API_KEY}&language=es`,
-    "peliculas-valoradas": `${BASE_URL}/movie/top_rated?api_key=${API_KEY}&language=es`,
-  };
+  const secciones = [
+    {
+      id: "peliculas-populares",
+      endpoint: `${BASE_URL}/movie/popular?api_key=${API_KEY}&language=es&page=1`,
+      tipo: "pelicula",
+    },
+    {
+      id: "series-populares",
+      endpoint: `${BASE_URL}/tv/popular?api_key=${API_KEY}&language=es&page=1`,
+      tipo: "serie",
+    },
+    {
+      id: "peliculas-valoradas",
+      endpoint: `${BASE_URL}/movie/top_rated?api_key=${API_KEY}&language=es&page=1`,
+      tipo: "pelicula",
+    }
+  ];
 
-  for (let id in secciones) {
-    fetch(secciones[id])
-      .then(function (respuesta) {
-        return respuesta.json();
+  for (let i = 0; i < secciones.length; i++) {
+    let seccion = secciones[i];
+
+    fetch(seccion.endpoint)
+      .then(function (response) {
+        return response.json();
       })
       .then(function (data) {
-        let contenedor = document.querySelector(`#${id}`);
-        let items = data.results;
+        const contenedor = document.querySelector(`#${seccion.id} .peliculas-home`);
+        const resultados = data.results;
 
         for (let i = 0; i < 5; i++) {
-          let item = items[i];
-          let titulo = item.title || item.name;
-          let fecha = item.release_date || item.first_air_date;
-          let tipo = item.title ? "pelicula" : "serie";
+          const item = resultados[i];
 
-          let div = document.createElement("div");
-          div.classList.add("item");
+         
+          let titulo;
+          if (item.title) {
+            titulo = item.title;
+          } else {
+            titulo = item.name;
+          }
 
-          div.innerHTML = `
-            <a href="detalle.html?id=${item.id}&tipo=${tipo}">
-              <img src="${IMG_URL + item.poster_path}" alt="${titulo}" />
-              <p>${titulo}</p>
-              <small>${fecha}</small>
-            </a>
+          
+          let fecha;
+          if (item.release_date) {
+            fecha = item.release_date;
+          } else {
+            fecha = item.first_air_date;
+          }
+          
+          let imagen;
+          if (item.poster_path) {
+            imagen = IMG_URL + item.poster_path;
+          } else {
+            imagen = "./img/placeholder.jpg";
+          }
+
+          const estructura = `
+            <article class="item">
+              <a class="link" href="./detallespelicula.html?id=${item.id}&tipo=${seccion.tipo}">
+                <img src="${imagen}" alt="${titulo}">
+                <h3>${titulo}</h3>
+                <p>Fecha de estreno: ${fecha}</p>
+              </a>
+            </article>
           `;
 
-          div.addEventListener("mouseover", function () {
-            console.log("Elemento:", this);
-            this.style.backgroundColor = "#f0f0f0";
-          });
-
-          contenedor.appendChild(div);
+          contenedor.innerHTML += estructura;
         }
       })
       .catch(function (error) {
-        console.log("Error al cargar sección:", id, error);
+        console.log(`Error al cargar la sección ${seccion.id}:`, error);
       });
   }
-
-  
-  let botonBuscar = document.querySelector("button");
-  botonBuscar.addEventListener("click", function () {
-    console.log("Hiciste click en el botón:", this);
-  });
 });
+
