@@ -27,7 +27,7 @@ fetch(url)
       let generos = "";
 for (let i = 0; i < data.genres.length; i++) {
   let generoActual = data.genres[i];
-  generos += `<a class="link-detalles" href="./detalleGenero.html?id=${generoActual.id}&type=movie">${generoActual.name}</a> `;
+  generos += `<a class="link-detalles" href="./detalle-gen-peliculas.html?id=${generoActual.id}&type=movie">${generoActual.name}</a> `;
 }
      genero.innerHTML += generos;
     })
