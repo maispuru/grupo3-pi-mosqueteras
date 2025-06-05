@@ -6,8 +6,9 @@ const queryString = location.search;
 const params = new URLSearchParams(queryString);
 const idGenero = params.get("genre_id");
 const nombreGenero = params.get("genre_name");
+console.log (idGenero)
 
-const tituloGenero = document.querySelector(".titulodetalle");
+const tituloGenero = document.querySelector(".titulosdetalle");
 tituloGenero.innerText = nombreGenero;
 
 const url = `${BASE_URL}/discover/movie?api_key=${API_KEY}&with_genres=${idGenero}&language=es-ES`;

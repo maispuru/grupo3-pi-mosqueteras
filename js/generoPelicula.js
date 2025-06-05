@@ -15,8 +15,8 @@ window.addEventListener("load", function () {
                 const genre = data.genres[i];
                 genresHTML += `
                     <section class="generopelicula">
-                        <a class="link" href="./detallegenero.html?genre_id=${genre.id}&genre_name=${(genre.name)}">
-                            <h2 class="titulosgeneropelicula">${genre.name}</h2>
+                       <a class="link" href="./detalle-gen-peliculas.html?genre_id=${genre.id}&genre_name=${encodeURIComponent(genre.name)}">
+                          <h2 class="titulosgeneropelicula">${genre.name}</h2>
                         </a>
                     </section>
                 `;

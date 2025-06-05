@@ -323,7 +323,7 @@ button {
     padding: 3%;
 }
 
-/*Detalles html*/
+/*Detalles peliculas*/
 
 .detalles-peliculas {
     display: flex;
@@ -358,13 +358,6 @@ button {
     margin-bottom: 2px;
     font-size: 18px;
 }
-
-.video-detalle {
-    display: flex;
-    flex-wrap: wrap;
-
-} 
-
 .titulo2-detalles{
     font-style: italic;
     font-size: 25px;
@@ -377,6 +370,52 @@ button {
     text-decoration: none;
 }
   
+/* detalles series */
+
+.detalles-serie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 45px 25px;
+    background-color:rgba(199, 195, 195, 0.2) ;
+    font-family: sans-serif;
+  }
+  
+.detalle-contenido {
+    display: flex;
+    flex-direction: column;
+}
+
+.detalles-box-serie {
+    padding: 15px 20px;
+    border-radius: 8px;
+    width: 100%;
+    text-align: left;
+}
+  
+.titulo1-detalles-serie {
+    text-align: center;
+    
+}
+  
+.Clasificacion-detalles-serie,
+  .genero-detalles-serie,
+  .Sinopsis-detalles-seroe,
+  .estreno-detalles-serie {
+    margin-bottom: 2px;
+    font-size: 18px;
+}
+.titulo2-detalles-serie{
+    font-style: italic;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+.link-detalles {
+    color: inherit;
+    text-decoration: none;
+}
 
   /* generospeliculas html */
 

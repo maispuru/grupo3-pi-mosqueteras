@@ -26,8 +26,11 @@ fetch(url)
       sinopis.innerHTML += `${data.overview}`;
       let generos = "";
 for (let i = 0; i < data.genres.length; i++) {
-  let generoActual = data.genres[i];
-  generos += `<a class="link-detalles" href="./detalle-gen-peliculas.html?id=${generoActual.id}&type=movie">${generoActual.name}</a> `;
+   let generoActual = data.genres[i];
+   generos += `<a href="./detalle-gen-peliculas.html?genre_id=${generoActual.id}&genre_name=${encodeURIComponent(generoActual.name)}">${generoActual.name}</a>`;
+    if (i !== data.genres.length - 1) {
+    generos += ", "; 
+}
 }
      genero.innerHTML += generos;
     })
