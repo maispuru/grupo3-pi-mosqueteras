@@ -1,4 +1,4 @@
-window.addEventListener("load", function () {
+window.addEventListener("DOMContentLoaded", function () {
   let API_KEY = "9731aaf98dbc7db52a32fb77a340e7c4"; 
   let BASE_URL = "https://api.themoviedb.org/3";
   let IMG_URL = "https://image.tmdb.org/t/p/w200";

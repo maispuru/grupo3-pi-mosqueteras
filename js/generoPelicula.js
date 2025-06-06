@@ -1,4 +1,4 @@
-window.addEventListener("load", function () {
+window.addEventListener("DOMContentLoaded", function () {
     const API_KEY = "9731aaf98dbc7db52a32fb77a340e7c4"; 
     const BASE_URL = "https://api.themoviedb.org/3";
     const API_GENRE_MOVIE = `${BASE_URL}/genre/movie/list?api_key=${API_KEY}&language=es-ES`;
