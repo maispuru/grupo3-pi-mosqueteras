@@ -1,9 +1,9 @@
 window.addEventListener("load", function () {
-  const API_KEY = "9731aaf98dbc7db52a32fb77a340e7c4"; 
-  const BASE_URL = "https://api.themoviedb.org/3";
-  const IMG_URL = "https://image.tmdb.org/t/p/w200";
+  let API_KEY = "9731aaf98dbc7db52a32fb77a340e7c4"; 
+  let BASE_URL = "https://api.themoviedb.org/3";
+  let IMG_URL = "https://image.tmdb.org/t/p/w200";
 
-  const secciones = [
+  let secciones = [
     {
       id: "peliculas-populares",
       endpoint: `${BASE_URL}/movie/popular?api_key=${API_KEY}&language=es&page=1`,
@@ -29,13 +29,12 @@ window.addEventListener("load", function () {
         return response.json();
       })
       .then(function (data) {
-        const contenedor = document.querySelector(`#${seccion.id} .peliculas-home`);
-        const resultados = data.results;
+        let contenedor = document.querySelector(`#${seccion.id} .peliculas-home`);
+        let resultados = data.results;
 
         for (let i = 0; i < resultados.length; i++) {
-          const item = resultados[i];
+          let item = resultados[i];
 
-         
           let titulo;
           if (item.title) {
             titulo = item.title;
@@ -43,14 +42,13 @@ window.addEventListener("load", function () {
             titulo = item.name;
           }
 
-          
           let fecha;
           if (item.release_date) {
             fecha = item.release_date;
           } else {
             fecha = item.first_air_date;
           }
-          
+
           let imagen;
           if (item.poster_path) {
             imagen = IMG_URL + item.poster_path;
@@ -58,7 +56,7 @@ window.addEventListener("load", function () {
             imagen = "./img/placeholder.jpg";
           }
 
-          const estructura = `
+          let estructura = `
             <article class="item">
               <a class="link" href="./detallespelicula.html?id=${item.id}&tipo=${seccion.tipo}">
                 <img src="${imagen}" alt="${titulo}">

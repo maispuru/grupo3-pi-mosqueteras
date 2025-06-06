@@ -1,20 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const API_KEY = "9731aaf98dbc7db52a32fb77a340e7c4";
-  const BASE_URL = "https://api.themoviedb.org/3";
-  const IMG_URL = "https://image.tmdb.org/t/p/w200";
+  let API_KEY = "9731aaf98dbc7db52a32fb77a340e7c4";
+  let BASE_URL = "https://api.themoviedb.org/3";
+  let IMG_URL = "https://image.tmdb.org/t/p/w200";
 
   
-  const queryString = location.search;
-  const queryStringObj = new URLSearchParams(queryString);
+  let queryString = location.search;
+  let queryStringObj = new URLSearchParams(queryString);
 
-  const termino = queryStringObj.get("search");
-  const tipo = queryStringObj.get("tipo"); 
+  let termino = queryStringObj.get("search");
+  let tipo = queryStringObj.get("tipo"); 
 
   
-  const tituloBusqueda = document.querySelector("#titulo-busqueda");
-  const contenedorResultados = document.querySelector("#contenedor-resultados");
-  const mensajeVacio = document.querySelector("#no-resultados");
-  const cargando = document.querySelector("#cargando");
+  let tituloBusqueda = document.querySelector("#titulo-busqueda");
+  let contenedorResultados = document.querySelector("#contenedor-resultados");
+  let mensajeVacio = document.querySelector("#no-resultados");
+  let cargando = document.querySelector("#cargando");
 
  
   tituloBusqueda.innerText = `Resultados de búsqueda para: "${termino}"`;
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .then(function (data) {
       cargando.style.display = "none";
 
-      const resultados = data.results;
+      let resultados = data.results;
 
       if (resultados.length === 0) {
         mensajeVacio.style.display = "block";
@@ -76,8 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <h3>${titulo}</h3>
                 <p>Fecha de estreno: ${fecha}</p>
               </a>
-            </article>
-          `;
+            </article>`;
 
           contenedorResultados.innerHTML += estructura;
         }
