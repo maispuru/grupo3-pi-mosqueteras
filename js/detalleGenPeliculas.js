@@ -25,8 +25,6 @@ fetch(url)
      html += `
        <article class="artdetallegenero">
             <h3>${peli.title}</h3>
-            <p>${peli.release_date}</p>
-            <a href="./detalle-gen-peliculas.html?id=${peli.id}">Ver más</a>
         </article>
         `;
     }

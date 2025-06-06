@@ -21,10 +21,8 @@ window.addEventListener("load", function () {
             for (let i = 0; i < data.results.length; i++) {
                 const serie = data.results[i];
                 html += `
-                    <article>
+                    <article class="artdetallegenero">
                         <h3>${serie.name}</h3>
-                        <p>${serie.first_air_date}</p>
-                        <a href="./detalle-gen-series.html?id=${serie.id}">Ver más</a>
                     </article>
                 `;
             }
