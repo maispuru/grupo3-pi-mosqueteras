@@ -52,9 +52,7 @@ window.addEventListener("DOMContentLoaded", function () {
           let imagen;
           if (item.poster_path) {
             imagen = IMG_URL + item.poster_path;
-          } else {
-            imagen = "./img/placeholder.jpg";
-          }
+          } 
 
           estructura += `
             <article class="item">

@@ -24,6 +24,10 @@
             </nav>
             <form action="./resultado.html" method="GET" class="search-form">
                 <input type="text" name="search" placeholder="Buscar..." required>
+                <label for="peliculas">Peliculas</label>
+                <input type="radio" name="tipo" id="peliculas" value="peliculas" checked>
+                <label for="series">Series</label>
+                <input type="radio" name="tipo" id="series" value="series" >
                 <button type="submit">🔍</button>
             </form>
         </section>
@@ -35,6 +39,7 @@
             <p id="cargando">Cargando resultados...</p>
             <div id="contenedor-resultados" class="peliculas-home"></div>
             <p id="no-resultados" style="display: none;">No se encontraron resultados para el término ingresado.</p>
+            <img class="cargando" src="./img/ZKZx.gif" alt="">
         </section>
     </main>
     

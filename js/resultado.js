@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let tituloBusqueda = document.querySelector("#titulo-busqueda");
   let contenedorResultados = document.querySelector("#contenedor-resultados");
   let mensajeVacio = document.querySelector("#no-resultados");
-  let cargando = document.querySelector("#cargando");
+  let cargando = document.querySelector(".cargando");
 
  
   tituloBusqueda.innerText = `Resultados de búsqueda para: "${termino}"`;
@@ -80,6 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
           contenedorResultados.innerHTML += estructura;
         }
+        cargando.style.display = "none";
       }
     })
     .catch(function (error) {
