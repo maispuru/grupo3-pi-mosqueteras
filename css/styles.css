@@ -91,11 +91,12 @@ header {
 }
 
 
-.peliculas-home{
-    display: flex;
-    margin-top: 20px;
-    justify-content: space-between;
-    align-items: center;
+.peliculas-home {
+  display: flex;
+  flex-wrap: wrap;  
+  flex-direction: row;                       
+  justify-content: center;  
+  margin-top: 20px;
 }
 
 .estructura{
@@ -104,34 +105,27 @@ header {
 
 .item {
     background: white;
-    padding: 10px;
+    width: 230px;
+    padding: 13px;
     border-radius: 5px;
+    margin: 13px;
+    justify-content: space-between;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
 .item img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
+     width: 100%;
+     height: 200px;
+     height: auto;
+     border-radius: 5px;
+
 }
 
 .item h3, .item p {
     margin: 10px 0;
     color: black;
     text-align: center;
-}
-
-.anillos{
-    width: 14%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.harry{
-    width: 14%;
-    height: auto;
-    border-radius: 5px;
 }
 
 footer {
@@ -552,18 +546,20 @@ button {
 
 .divdetallegenero {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 20px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
 
 .artdetallegenero {
+    width: 230px;
     background: white;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    text-align: right;
+    text-align: center;
 }
 
 .artdetallegenero img {
@@ -576,6 +572,12 @@ button {
     margin: 10px 0;
     color: black;
     text-align: center;
+}
+
+.box-detalle-genero-peli {
+ display: flex;
+ flex: wrap;
+ width: 250px;
 }
 
 @media (max-width:420px) {
@@ -632,8 +634,6 @@ button {
         align-items: center;
     }
 
-    .anillos ,
-    .harry, 
     .item {
         width: 52%;
      }

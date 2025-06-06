@@ -32,7 +32,7 @@ window.addEventListener("load", function () {
         const contenedor = document.querySelector(`#${seccion.id} .peliculas-home`);
         const resultados = data.results;
 
-        for (let i = 0; i < 5; i++) {
+        for (let i = 0; i < resultados.length; i++) {
           const item = resultados[i];
 
          
