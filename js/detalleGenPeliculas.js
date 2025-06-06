@@ -23,7 +23,7 @@ fetch(url)
     for (let i = 0; i < data.results.length; i++) {
      const peli = data.results[i];
      html += `
-       <article>
+       <article class="artdetallegenero">
             <h3>${peli.title}</h3>
             <p>${peli.release_date}</p>
             <a href="./detalle-gen-peliculas.html?id=${peli.id}">Ver más</a>

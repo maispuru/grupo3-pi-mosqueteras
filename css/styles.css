@@ -574,11 +574,6 @@ button {
     text-align: center;
 }
 
-.box-detalle-genero-peli {
- display: flex;
- flex: wrap;
- width: 250px;
-}
 
 @media (max-width:420px) {
     /* mobile */
