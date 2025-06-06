@@ -14,7 +14,7 @@ let genero = document.querySelector (".genero-detalles-serie")
 let sinopis = document.querySelector (".Sinopsis-detalles-serie")
 let link = document. querySelector(".link-detalles")
 
- const url = `${BASE_URL}/tv/${idSerie}?api_key=${API_KEY}&language=es-US`;
+ const url = `${BASE_URL}/tv/${idSerie}?api_key=${API_KEY}&language=en-US`;
 
 fetch(url)
     .then(function (respuesta) {
@@ -25,7 +25,7 @@ fetch(url)
       titulo.innerText = data.name;
       imagen.src = `https://image.tmdb.org/t/p/w500/${data.poster_path}`;
       clasificacion.innerHTML = `<p class="Clasificacion-detalles-serie"> <strong> Clasificacion: </strong> ${data.vote_average} </p>` ;
-      estreno.innerHTML = `<p class="estreno-detalles-serie"><strong>Fecha de estreno:</strong> ${first_air_date} </p>` ;
+      estreno.innerHTML = `<p class="estreno-detalles-serie"><strong>Fecha de estreno:</strong> ${data.first_air_date} </p>` ;
       sinopis.innerHTML = `<p class="Sinopsis-detalles-serie"> <strong> Sinopsis: </strong> ${data.overview}</p>` ;
       let generos = "";
 for (let i = 0; i < data.genres.length; i++) {
