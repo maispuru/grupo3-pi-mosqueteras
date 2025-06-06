@@ -12,6 +12,7 @@ let clasificacion = document.querySelector (".Clasificacion-detalles-serie")
 let estreno = document.querySelector (".estreno-detalles-serie")
 let genero = document.querySelector (".genero-detalles-serie")
 let sinopis = document.querySelector (".Sinopsis-detalles-serie")
+let link = document. querySelector(".link-detalles")
 
  const url = `${BASE_URL}/tv/${idSerie}?api_key=${API_KEY}&language=es-US`;
 
@@ -20,20 +21,22 @@ fetch(url)
       return respuesta.json();
     })
     .then(function (data) {
+     console.log (data)
       titulo.innerText = data.name;
       imagen.src = `https://image.tmdb.org/t/p/w500/${data.poster_path}`;
-      clasificacion.innerHTML = `<p class="Clasificacion-detalles-serie"> <strong>Clasificacion:</strong> ${data.vote_average} </p>` ;
-      estreno.innerHTML = `<p class="estreno-detalles-serie"><strong>Fecha de estreno:</strong> ${data.release_date} </p>` ;
-      sinopis.innerHTML = `<p class="Sinopsis-detalles-serie"><strong>Sinopsis: </strong> ${data.overview}</p>` ;
+      clasificacion.innerHTML = `<p class="Clasificacion-detalles-serie"> <strong> Clasificacion: </strong> ${data.vote_average} </p>` ;
+      estreno.innerHTML = `<p class="estreno-detalles-serie"><strong>Fecha de estreno:</strong> ${first_air_date} </p>` ;
+      sinopis.innerHTML = `<p class="Sinopsis-detalles-serie"> <strong> Sinopsis: </strong> ${data.overview}</p>` ;
       let generos = "";
 for (let i = 0; i < data.genres.length; i++) {
    let generoActual = data.genres[i];
-   generos += `<a href="./detalle-gen-series.html?genre_id=${generoActual.id}&genre_name=${encodeURIComponent(generoActual.name)}">${generoActual.name}</a>`;
+   generos += `<a class="link-detalles" href="./detalle-gen-series.html?genre_id=${generoActual.id}&genre_name=${encodeURIComponent(generoActual.name)}">${generoActual.name}</a>`;
     if (i !== data.genres.length - 1) {
     generos += ", "; 
 }
 }
      genero.innerHTML = `<p class="genero-detalles-serie"> <strong> Genero: </strong> ${generos} </p>`;
+     link.style.color = "black" ;
      })
 .catch(function (error) {
   console.log("Error:", error);
