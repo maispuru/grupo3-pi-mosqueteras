@@ -13,20 +13,18 @@ let estreno = document.querySelector (".estreno-detalles-serie")
 let genero = document.querySelector (".genero-detalles-serie")
 let sinopis = document.querySelector (".Sinopsis-detalles-serie")
 
- const url = `${BASE_URL}/tv/${idSerie}?api_key=${API_KEY}&language=es-ES`;
+ const url = `${BASE_URL}/tv/${idSerie}?api_key=${API_KEY}&language=es-US`;
 
 fetch(url)
     .then(function (respuesta) {
       return respuesta.json();
     })
     .then(function (data) {
-      console.log(data);
-      
       titulo.innerText = data.name;
       imagen.src = `https://image.tmdb.org/t/p/w500/${data.poster_path}`;
-      clasificacion.innerHTML +=`${data.vote_average}`;
-      estreno.innerHTML += `${data.release_date}`;
-      sinopis.innerHTML += `${data.overview}`;
+      clasificacion.innerHTML = `<p class="Clasificacion-detalles-serie"> <strong>Clasificacion:</strong> ${data.vote_average} </p>` ;
+      estreno.innerHTML = `<p class="estreno-detalles-serie"><strong>Fecha de estreno:</strong> ${data.release_date} </p>` ;
+      sinopis.innerHTML = `<p class="Sinopsis-detalles-serie"><strong>Sinopsis: </strong> ${data.overview}</p>` ;
       let generos = "";
 for (let i = 0; i < data.genres.length; i++) {
    let generoActual = data.genres[i];
@@ -35,8 +33,8 @@ for (let i = 0; i < data.genres.length; i++) {
     generos += ", "; 
 }
 }
-     genero.innerHTML += generos;
-    })
+     genero.innerHTML = `<p class="genero-detalles-serie"> <strong> Genero: </strong> ${generos} </p>`;
+     })
 .catch(function (error) {
   console.log("Error:", error);
 })
