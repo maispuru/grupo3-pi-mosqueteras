@@ -29,10 +29,10 @@ window.addEventListener("load", function () {
         return response.json();
       })
       .then(function (data) {
-        let contenedor = document.querySelector(`#${seccion.id} .peliculas-home`);
+        let contenedor = document.querySelector(`#${seccion.id}`);
         let resultados = data.results;
-
-        for (let i = 0; i < resultados.length; i++) {
+        let estructura = "";
+        for (let i = 0; i < 4; i++) {
           let item = resultados[i];
 
           let titulo;
@@ -56,9 +56,9 @@ window.addEventListener("load", function () {
             imagen = "./img/placeholder.jpg";
           }
 
-          let estructura = `
+          estructura += `
             <article class="item">
-              <a class="link" href="./detallespelicula.html?id=${item.id}&tipo=${seccion.tipo}">
+              <a class="link" href="./detalles${seccion.tipo}.html?id=${item.id}&tipo=${seccion.tipo}">
                 <img src="${imagen}" alt="${titulo}">
                 <h3>${titulo}</h3>
                 <p>Fecha de estreno: ${fecha}</p>
@@ -66,8 +66,10 @@ window.addEventListener("load", function () {
             </article>
           `;
 
-          contenedor.innerHTML += estructura;
+          
         }
+
+        contenedor.innerHTML += estructura;
       })
       .catch(function (error) {
         console.log(`Error al cargar la sección ${seccion.id}:`, error);

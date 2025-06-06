@@ -13,14 +13,17 @@ let estreno = document.querySelector (".estreno-detalles-serie")
 let genero = document.querySelector (".genero-detalles-serie")
 let sinopis = document.querySelector (".Sinopsis-detalles-serie")
 
- const url = `${BASE_URL}/movie/${idSerie}?api_key=${API_KEY}&language=es-ES`;
+ const url = `${BASE_URL}/tv/${idSerie}?api_key=${API_KEY}&language=es-ES`;
 
 fetch(url)
     .then(function (respuesta) {
       return respuesta.json();
     })
     .then(function (data) {
-      titulo.innerText = data.title;
+      console.log(data);
+      
+      titulo.innerText = data.name;
+      imagen.src = `https://image.tmdb.org/t/p/w500/${data.poster_path}`;
       clasificacion.innerHTML +=`${data.vote_average}`;
       estreno.innerHTML += `${data.release_date}`;
       sinopis.innerHTML += `${data.overview}`;

@@ -7,7 +7,7 @@ window.addEventListener("load", function () {
   const idPelicula = queryStringObj.get("id");
 
 let titulo = document.querySelector ("h1")
-let imagen = document.querySelector (".imagen")
+let imagen = document.querySelector (".imagen-detalle-pelicula")
 let clasificacion = document.querySelector (".Clasificacion-detalles")
 let estreno = document.querySelector (".estreno-detalles")
 let genero = document.querySelector (".genero-detalles")
@@ -21,6 +21,7 @@ fetch(url)
     })
     .then(function (data) {
       titulo.innerText = data.title;
+      imagen.src = `https://image.tmdb.org/t/p/w500/${data.poster_path}`;
       clasificacion.innerHTML +=`${data.vote_average}`;
       estreno.innerHTML += `${data.release_date}`;
       sinopis.innerHTML += `${data.overview}`;
